@@ -1,0 +1,100 @@
+/* Contact Section */
+
+#contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 20px 60px;
+}
+
+#contact-section > h2 {
+  text-align: center;
+}
+
+/* Section footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  border-top: 1px solid var(--broder);
+
+}
+
+@media (min-width: 630px) {
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .btn > svg {
+    height: 20px;
+    width: 20px;
+  }
+
+  .btn > span {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .get-touch > span:first-child {
+    padding: 15px;
+  }
+
+  #logos-section {
+    flex-direction: row;
+    gap: 200px;
+  }
+
+  .container-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .get-touch > span:first-child {
+    padding: 20px;
+  }
+
+  .btn {
+    padding: 20px 40px;
+  }
+
+  .container-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Scroll Barr */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #161616;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--border-second);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--broder);
+}
